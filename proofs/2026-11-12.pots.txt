@@ -1,0 +1,1 @@
+2026-11-12  pots manifest sha256 560d10a8e7125cae6b6d99ecc3ea9d7a1f49fed9692efc1a76102b88f9de9219  pots 8

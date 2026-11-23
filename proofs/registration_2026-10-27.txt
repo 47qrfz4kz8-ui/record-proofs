@@ -1,0 +1,3 @@
+pot registry, registered 2026-10-27
+P1 v1  start 2026-10-27  method sha256 808212889f3a69caa23d76e5b4869cc79d90ed5fb5eedfe07b9015d394960825
+P2 v1  start 2026-10-27  method sha256 64e5d950eb13e80ed626dc509e1566aa04667614bd3838d237bebb4cf3fafd4c

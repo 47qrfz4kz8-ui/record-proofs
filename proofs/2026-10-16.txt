@@ -1,0 +1,1 @@
+2026-10-16  sha256 c63d51e98c9e39dd7ffc3b8a2bd33f8d0c03aec1cbf90755bcd91b540c34291d  companies 441  open 5  found 17  judged 0

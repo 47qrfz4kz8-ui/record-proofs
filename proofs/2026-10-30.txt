@@ -1,0 +1,1 @@
+2026-10-30  sha256 e7c5c9dfba2712ef6be1d6e1a288c2b23c78923c88fea934c22142375ec43307  companies 2727  open 0  found 26  judged 2

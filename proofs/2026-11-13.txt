@@ -1,0 +1,1 @@
+2026-11-13  sha256 e00458d5d65e19cd84e7f704f8942cae9e8f2ac12818b544421924fcc59dd976  companies 2692  open 0  found 34  judged 10

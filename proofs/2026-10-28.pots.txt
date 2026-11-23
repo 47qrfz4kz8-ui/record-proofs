@@ -1,0 +1,1 @@
+2026-10-28  pots manifest sha256 85493ccd2559eacf1d3e7cdc331f0aa79a72a676fffa8305179929db3e34b245  pots 8
