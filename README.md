@@ -14,3 +14,9 @@ date and fingerprint only.
 
 To check a night: `pip install opentimestamps-client`, then `ots verify proofs/<close>.txt.ots` (it reports the Bitcoin block that
 holds it). When a record file is published, its SHA-256 (`sha256sum <close>.json`) must equal the hash in `proofs/<close>.txt`.
+
+Corrections are listed in `CORRECTIONS.md`, each with what changed, when and why; earlier versions are kept in `corrections/`,
+never deleted.
+
+Note: the lines for the closes of 20 October to 20 November 2026 read `open 0`. That was a counting fault in the proof line
+only, since fixed; the stamped record files themselves carry the right number of open finds.
