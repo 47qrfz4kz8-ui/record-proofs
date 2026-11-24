@@ -20,3 +20,13 @@ never deleted.
 
 Note: the lines for the closes of 20 October to 20 November 2026 read `open 0`. That was a counting fault in the proof line
 only, since fixed; the stamped record files themselves carry the right number of open finds.
+
+## The record files
+
+`record/<close>.json` is the record file each night's proof fingerprints: `sha256sum record/<close>.json` equals the hash in
+`proofs/<close>.txt`. `METHOD.md` says how the score is counted from them. When present, `BASE_2026-10-15.json` holds the
+portfolio as it stood at the close of 15 October 2026, the base the public score counts from.
+
+On the benchmark: the record files' `spy_close` and `spy_entry` are SPY's price levels, the index's closes as traded. The score
+uses SPY's total return, with its dividends reinvested on the ex-date (`METHOD.md`), so a rebuild from the price levels alone will
+differ from the score by SPY's dividends.
