@@ -1,0 +1,21 @@
+{
+ "raw": [],
+ "missing": [],
+ "late": [],
+ "figures": [
+  {
+   "field": "judged",
+   "sealed": 11,
+   "should_be": 10,
+   "pot_pct": 10.439,
+   "why": "B-2036: the judging clock and the record read Liquidity's find-date snapshot line, 32.94 (moved by the 10-K of 19 Nov), not the estimate it was published on, 36.48 (its find event's figures.estimate_at_find). The 23 Nov close of 33.01 passed 32.94, so the sealed file ended it 'above' on its first day; against 36.48 it is open. The sealed file's judged 11 should be 10 and open_count 8 should be 9; its move (+0.98%), performance_pct 6.09 and pot_pct 10.439 are unchanged (it was sold at the same close it is now held at). Fixed in 284f825 (call_move, performance_record) and 5c2157b (signal_scorecard); Score of record and performance_record re-run 24 Nov ~10:50 Tbilisi; that run wrote the public correction event (find_estimate, 32.9411 -> 36.48). Population: 1 of 40 finds in the Score had a published estimate different from its snapshot.",
+   "readers_saw": "yes: the app showed Liquidity as 'reached our estimate' from the 24 Nov morning build (Harry, 24 Nov)",
+   "decision": "Performance lead, 24 Nov 2026 (B-2036: a find is judged on the estimate it was published on)",
+   "audit": "Audit, 24 Nov 2026: CHECKED. The sealed 23 Nov file reads judged 11, open_count 8, LQDT close 33.01; LQDT's find event carries estimate_at_find 36.48; 33.01 < 36.48, so open, not 'above': judged 10, open 9; move unchanged."
+  }
+ ],
+ "summary": "judged sealed as 11; the record's figure is 10",
+ "close": "2026-11-23",
+ "at": "2026-11-24T11:31:14",
+ "rule": "a close's public file is written once; a figure or a price that differs from the record is a correction for the record (RECORD_RULES s10)"
+}

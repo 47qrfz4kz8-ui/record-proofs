@@ -1,0 +1,21 @@
+{
+ "raw": [],
+ "missing": [],
+ "late": [],
+ "figures": [
+  {
+   "field": "pot_pct",
+   "sealed": 9.62,
+   "should_be": 9.581,
+   "pot_pct": 9.581,
+   "why": "ERR-384: the pot held PepsiCo's 18 Nov re-find, merged into its 23 Sep find by R-727, as a 26th holding from the 19 Nov open (the add-only finds register still listed it); the Score held 25. The sealed file's rows never carried the re-find (before = after: not in the record); only its pot_pct, 9.62, counted it. Fixed in e84c663; re-run on the box 21 Nov 07:23: pot +9.581%, gap 15.32.",
+   "readers_saw": "yes: the 19 Nov headline (+9.62%, 15.36 points) from the 19 Nov build until the 21 Nov re-run's build",
+   "decision": "R-720 / R-727 (the Chair, 21 Nov): the sealed file stands as written; this row appends the correction",
+   "audit": "Audit lead, 21 Nov 2026: signed on the Chair's word to publish. All four checks passed (92bd7c7, roles/audit/ERR384_POT_DOUBLE_COUNT_READ_2026-11-21.md): the 26th holding proven to be PEP 2026-11-18 by back-solving both days against PepsiCo's opens; sealed 9.62 -> 9.581 and gap 15.36 -> 15.32 against the box re-run; this row read and corrections_check.py run on the box at 915071c with no failure on it"
+  }
+ ],
+ "summary": "pot_pct sealed as 9.62; the record's figure is 9.581",
+ "close": "2026-11-19",
+ "at": "2026-11-21T07:57:48",
+ "rule": "a close's public file is written once; a figure or a price that differs from the record is a correction for the record (RECORD_RULES s10)"
+}

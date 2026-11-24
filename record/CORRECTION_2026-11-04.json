@@ -1,0 +1,21 @@
+{
+ "raw": [],
+ "missing": [],
+ "late": [],
+ "figures": [
+  {
+   "field": "performance_pct",
+   "sealed": 12.18,
+   "should_be": 12.718,
+   "pot_pct": 16.037,
+   "why": "the app's own 'average find' was written as performance_pct; the rows' mean move is 12.718 and the pot 16.037",
+   "readers_saw": "no (R-423)",
+   "decision": "Performance lead, 7 Nov 2026 (option A: performance_pct is the rows' mean move)",
+   "audit": "Audit lead, 7 Nov 2026: signed. Sealed 12.18 and the rows' mean 12.718 (27 rows) re-measured on the box from the sealed file itself; pot 16.037 witnessed twice (Performance's chart series 16.04; paper_pot record_pot 116.037)"
+  }
+ ],
+ "summary": "performance_pct sealed as 12.18; the record's figure is 12.718",
+ "close": "2026-11-04",
+ "at": "2026-11-07T10:56:27",
+ "rule": "a close's public file is written once; a figure or a price that differs from the record is a correction for the record (RECORD_RULES s10)"
+}

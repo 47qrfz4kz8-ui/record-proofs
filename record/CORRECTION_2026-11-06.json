@@ -1,0 +1,14 @@
+{
+ "raw": [
+  "ROL 2026-10-14 entry_price_raw: 34.03 sealed, 33.27 now",
+  "TMUS 2026-10-20 entry_price_raw: 155.44 sealed, 151.55 now",
+  "TRU 2026-10-20 entry_price_raw: 79.88 sealed, 77.62 now",
+  "TJX 2026-10-27 entry_price_raw: 139.93 sealed, 138.98 now"
+ ],
+ "missing": [],
+ "late": [],
+ "summary": "4 price(s) as traded differ",
+ "close": "2026-11-06",
+ "at": "2026-11-08T15:21:20",
+ "rule": "a close's public file is written once; a price as traded that differs from it is a correction for the record (RECORD_RULES s10)"
+}

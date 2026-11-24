@@ -1,0 +1,21 @@
+{
+ "raw": [],
+ "missing": [],
+ "late": [],
+ "figures": [
+  {
+   "field": "pot_pct",
+   "sealed": 11.718,
+   "should_be": 11.585,
+   "pot_pct": 11.585,
+   "why": "B-1865: the 18 Nov file was written by the 19 Nov 12:15 build, after Valmont's reversal (R-721, 8af3499) and PepsiCo's reinstatement (R-727, 5502676) were in the record but before Lennox's dated ending (R-720, 162b395/753e228) took effect, which was at the 20 Nov gate when RULED_ENDS went on (0addeb3). So it held Lennox open through 18 Nov. Re-derived independently on the box (replay_sealed's pot, today's prices): today's terms 11.585 = the record; the same with Lennox held open 11.718 = the sealed figure; Lennox's dated ending accounts for the whole -0.133.",
+   "readers_saw": "yes: the 18 Nov headline (+11.72%) from the 19 Nov 12:15 build until the next close's build",
+   "decision": "R-720 / R-727 (the Chair, 21 Nov): the sealed file stands as written; this row appends the correction",
+   "audit": "Audit lead, 23 Nov 2026: signed. Cause re-derived from Audit's own sources (sealed rows, public closes): LII 16-18 Nov +2.156% against the other held -0.930% at a 3.43% value share gives about -0.118, agreeing with -0.133 within the estimate's error; 11.718 sealed and 11.585 now read on the box. Not a re-run of B1865_attribute.py (roles/audit/b1865/B1865_AUDIT_SIGN_2026-11-23.md, 093dfd5)"
+  }
+ ],
+ "summary": "pot_pct sealed as 11.718; the record's figure is 11.585",
+ "close": "2026-11-18",
+ "at": "2026-11-23T04:04:35",
+ "rule": "a close's public file is written once; a figure or a price that differs from the record is a correction for the record (RECORD_RULES s10)"
+}
