@@ -37,14 +37,47 @@ The S&P 500 is SPY's total return over the same closes, with its dividends reinv
 
 ## The public start
 
-The public score counts from **16 October 2026**, the first session after the first night sealed on Bitcoin (the proof for the
-15 October close, written before 16 October's open). The portfolio and SPY are both set to 100 at the 15 October close.
-`BASE_2026-10-15.json` holds the companies in the portfolio at that close, with their prices and SPY's level. The score at any
-later close is the portfolio's change from that base minus SPY's change from that base, in percentage points.
+The public score counts from the **20 October 2026 close**, the first record file published with its companies and prices, so
+every figure can be checked from public sealed files alone (Harry, 25 November 2026). The portfolio and SPY are both set to 100 at
+the 20 October close; the first session counted is 21 October. The score at any later close is the portfolio's change from that
+base minus SPY's change from that base, in percentage points.
 
 Each record file's `pot_pct` is the portfolio's change from its first entry (18 September 2026). To read it from the public start,
-compound: (1 + pot_pct at the close / 100) / (1 + pot_pct at 15 October / 100) - 1. For SPY, divide its total-return level at the
-close by its total-return level in the base file.
+compound: (1 + pot_pct at the close / 100) / (1 + pot_pct at 20 October / 100) - 1. For SPY, divide its total-return level at the
+close by its level at 20 October. Those levels are in `SCORE_DAILY.json`; the record files' `spy_close` and `spy_entry` are
+SPY's price levels, without its dividends.
+
+**The research record.** Migna's record from its first entry, 18 September 2026, is kept and stays in the files. It is the
+research record: it is never presented as the public track record.
+
+## Where the files depart from these rules, dated
+
+The record files are sealed as written, so a rule adopted later does not change an earlier file. Each departure a reader will meet:
+
+- **Our estimate on the day it was added (from the 23 October file).** Earlier files carried a later revision of our estimate for
+  some companies. From the 23 October file each company carries the estimate as it stood on the day it was added: Paychex moves
+  from 137.28 to 126.79 and Jack Henry from 192.85 to 202.21. A company's removal on reaching our estimate is judged only against
+  that figure.
+- **Joining when readers could first see it.** A company joins at the first open after it reached readers, which can be later
+  than the session after its `found` date: T-Mobile US and TransUnion (recorded 20 October, shown to readers 22 October), Rollins
+  and TJX (sealed before they reached readers), Cognex (held back a night by our own system). The `published` field, which would
+  show this, is empty in every file so far. That is a fault in the files, and the entry day in each file is the authority.
+- **A ruling takes effect at the first close after it (from 18 November).** Where a ruling ended a company and the code caught up
+  later, the ending is dated to the first close after the ruling, by a correction, and the sealed files from the days between
+  still show it held. Lennox is the case.
+- **An ending caused by our own error is undone (from 19 November).** When a company was removed because of our own logged error,
+  it is reinstated as if the error had not happened, by a dated correction. This is the one exception to "never resumed".
+  PepsiCo is the case: it continues as the company added on 23 September (entry at the 24 September open), and its 18 November
+  re-entry is withdrawn as our error.
+- **A withdrawal reversed (18 November).** Valmont was withdrawn on 2 November under a rule we had already dropped. The withdrawal
+  was reversed by a dated correction, so Valmont counts from its 2 November entry; the 18 November file is the first to show it.
+- **The portfolio figure in the files (from 6 November).** `pot_pct` is in every file from 6 November. Earlier files carry each
+  company's rows, from which it can be rebuilt, and `performance_pct`, the average company's move, which is a different figure.
+
+## The daily score
+
+`SCORE_DAILY.json` lists the score at every close from the base: the portfolio and SPY as levels (100 at the 20 October close),
+the gap in points and the number of companies held. Each line can be checked against that close's record file.
 
 ## Corrections
 

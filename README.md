@@ -24,8 +24,9 @@ only, since fixed; the stamped record files themselves carry the right number of
 ## The record files
 
 `record/<close>.json` is the record file each night's proof fingerprints: `sha256sum record/<close>.json` equals the hash in
-`proofs/<close>.txt`. `METHOD.md` says how the score is counted from them. When present, `BASE_2026-10-15.json` holds the
-portfolio as it stood at the close of 15 October 2026, the base the public score counts from.
+`proofs/<close>.txt`. `METHOD.md` says how the score is counted from them; the public score counts from the close of 20 October
+2026, the first record file published. `SCORE_DAILY.json` gives the public score at every close since then, each line checkable
+against the record files.
 
 On the benchmark: the record files' `spy_close` and `spy_entry` are SPY's price levels, the index's closes as traded. The score
 uses SPY's total return, with its dividends reinvested on the ex-date (`METHOD.md`), so a rebuild from the price levels alone will
