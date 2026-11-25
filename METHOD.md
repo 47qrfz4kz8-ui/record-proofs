@@ -87,6 +87,10 @@ The record files are sealed as written, so a rule adopted later does not change 
 the gap in points, and the companies held that day, each with its move and close. The portfolio's move each day is the simple
 average of those moves, so every line can be checked without rebuilding the rules.
 
+It is published only when two things hold: the score rebuilt from the public files beside it matches it, and it counts from the start
+this note states. When either fails, the file is withdrawn until the next night's file passes. A missing `SCORE_DAILY.json` means
+the night's file failed that check. It never means the figures were changed.
+
 ## Corrections
 
 A sealed file is never rewritten. A correction is a new, separately named file, `CORRECTION_<close>.json`, saying what changed,
