@@ -1,0 +1,1 @@
+SCORE_DAILY.json (to 2026-11-24)  sha256 a62de9ac5df4ab4b45ea9c7c709d9195a94bc4b3ac5c074c220252dee9c3175f
