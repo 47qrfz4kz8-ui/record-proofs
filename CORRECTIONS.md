@@ -21,3 +21,9 @@ The record for the 20 November close was first written at 03:07 UTC on 21 Novemb
 fault since fixed). It was replaced at 03:57 UTC, before the record was sealed. The stamped file is the 03:57 one (sha256
 567427923bc07b2799e65c8a59bdad516ffb32c1f2041449ddadc8bccb37ce88); the 03:07 file (sha256
 a17f238d3be40c24598a688cc3cd6d2875a1c9c9cff08a7d62841b29c281d87a) is in no proof and is kept with the record files.
+
+## SCORE_DAILY.json -- withdrawn 25 November 2026
+
+A first `SCORE_DAILY.json`, published on the morning of 25 November, counted the score from the close of 15 October. The public
+score counts from the close of 20 October (`METHOD.md`), so that file contradicted the method and was withdrawn the same morning.
+The series is published again only when it starts at the 20 October close. The withdrawn file stays in this repository's history.

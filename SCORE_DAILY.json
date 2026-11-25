@@ -1,0 +1,190 @@
+{
+ "about": "Migna US Quality's public score at every close from its base (METHOD.md): the portfolio and SPY as levels, 100 at the base close, total return; the gap in points; the companies held.",
+ "base_close": "2026-10-20",
+ "public_start": "2026-10-21",
+ "to_close": "2026-11-24",
+ "closes": [
+  {
+   "close": "2026-10-20",
+   "portfolio": 100.0,
+   "sp500": 100.0,
+   "ahead_pts": 0.0,
+   "held": 21
+  },
+  {
+   "close": "2026-10-21",
+   "portfolio": 99.6142,
+   "sp500": 100.5253,
+   "ahead_pts": -0.911,
+   "held": 21
+  },
+  {
+   "close": "2026-10-22",
+   "portfolio": 103.4929,
+   "sp500": 99.3384,
+   "ahead_pts": 4.155,
+   "held": 23
+  },
+  {
+   "close": "2026-10-23",
+   "portfolio": 102.0448,
+   "sp500": 98.82,
+   "ahead_pts": 3.225,
+   "held": 24
+  },
+  {
+   "close": "2026-10-26",
+   "portfolio": 102.1018,
+   "sp500": 99.5221,
+   "ahead_pts": 2.58,
+   "held": 25
+  },
+  {
+   "close": "2026-10-27",
+   "portfolio": 101.4376,
+   "sp500": 100.08,
+   "ahead_pts": 1.358,
+   "held": 25
+  },
+  {
+   "close": "2026-10-28",
+   "portfolio": 101.5013,
+   "sp500": 100.4236,
+   "ahead_pts": 1.078,
+   "held": 25
+  },
+  {
+   "close": "2026-10-29",
+   "portfolio": 103.1166,
+   "sp500": 100.0405,
+   "ahead_pts": 3.076,
+   "held": 26
+  },
+  {
+   "close": "2026-10-30",
+   "portfolio": 102.9389,
+   "sp500": 98.267,
+   "ahead_pts": 4.672,
+   "held": 24
+  },
+  {
+   "close": "2026-11-02",
+   "portfolio": 105.9758,
+   "sp500": 97.7959,
+   "ahead_pts": 8.18,
+   "held": 27
+  },
+  {
+   "close": "2026-11-03",
+   "portfolio": 105.0113,
+   "sp500": 98.0892,
+   "ahead_pts": 6.922,
+   "held": 26
+  },
+  {
+   "close": "2026-11-04",
+   "portfolio": 109.7642,
+   "sp500": 99.7087,
+   "ahead_pts": 10.055,
+   "held": 25
+  },
+  {
+   "close": "2026-11-05",
+   "portfolio": 107.3098,
+   "sp500": 95.3124,
+   "ahead_pts": 11.997,
+   "held": 22
+  },
+  {
+   "close": "2026-11-06",
+   "portfolio": 105.9615,
+   "sp500": 95.6106,
+   "ahead_pts": 10.351,
+   "held": 21
+  },
+  {
+   "close": "2026-11-09",
+   "portfolio": 108.088,
+   "sp500": 97.8729,
+   "ahead_pts": 10.215,
+   "held": 26
+  },
+  {
+   "close": "2026-11-10",
+   "portfolio": 108.1821,
+   "sp500": 97.5125,
+   "ahead_pts": 10.67,
+   "held": 26
+  },
+  {
+   "close": "2026-11-11",
+   "portfolio": 108.8567,
+   "sp500": 98.7982,
+   "ahead_pts": 10.059,
+   "held": 26
+  },
+  {
+   "close": "2026-11-12",
+   "portfolio": 107.8277,
+   "sp500": 98.4487,
+   "ahead_pts": 9.379,
+   "held": 26
+  },
+  {
+   "close": "2026-11-13",
+   "portfolio": 107.9769,
+   "sp500": 98.0912,
+   "ahead_pts": 9.886,
+   "held": 26
+  },
+  {
+   "close": "2026-11-16",
+   "portfolio": 107.0276,
+   "sp500": 96.2159,
+   "ahead_pts": 10.812,
+   "held": 26
+  },
+  {
+   "close": "2026-11-17",
+   "portfolio": 105.6831,
+   "sp500": 95.2393,
+   "ahead_pts": 10.444,
+   "held": 25
+  },
+  {
+   "close": "2026-11-18",
+   "portfolio": 106.0271,
+   "sp500": 94.948,
+   "ahead_pts": 11.079,
+   "held": 25
+  },
+  {
+   "close": "2026-11-19",
+   "portfolio": 104.1229,
+   "sp500": 93.0856,
+   "ahead_pts": 11.037,
+   "held": 25
+  },
+  {
+   "close": "2026-11-20",
+   "portfolio": 102.3869,
+   "sp500": 89.6965,
+   "ahead_pts": 12.69,
+   "held": 25
+  },
+  {
+   "close": "2026-11-23",
+   "portfolio": 104.9381,
+   "sp500": 93.92,
+   "ahead_pts": 11.018,
+   "held": 30
+  },
+  {
+   "close": "2026-11-24",
+   "portfolio": 105.5653,
+   "sp500": 93.4638,
+   "ahead_pts": 12.101,
+   "held": 30
+  }
+ ]
+}
