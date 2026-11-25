@@ -1,0 +1,31 @@
+{
+ "raw": [],
+ "missing": [],
+ "late": [],
+ "figures": [
+  {
+   "field": "pot_pct",
+   "sealed": 11.061,
+   "should_be": 11.099,
+   "pot_pct": 11.099,
+   "why": "ERR-407: the 04:34 events rewrite of 25 Nov put Liquidity's sealed 23 Nov estimate (32.9411) back over its signed correction (36.48, ERR-400); the 05:35 Score re-judged it 'above' at the 23 Nov close, and the 07:05 build sealed that into the 24 Nov file: judged at 23 Nov, move +0.98%, pot 11.061. Under Harry's ruling R-812 Liquidity is withdrawn, our error, frozen at the 24 Nov close: move +2.6% (33.54 against its 32.69 entry), pot 11.099. Re-derived on the box after the fixes (11d7826, bbda1f2, ba5ad4e): the Score of 25 Nov ~08:3x reads LQDT 'withdrawn: our error' at 2026-11-24, +2.6%, and score.headline 11.099. The file's judged count (12), open_count, performance_pct (6.6, the mean 6.64) and every other row are unchanged.",
+   "readers_saw": "no for the 24 Nov file's LQDT row: live builds were held from 08:19 (release_hold) and the served release (04:40) shows Liquidity 'Withdrawn, our error · 24 Nov'",
+   "decision": "R-812 (Harry, 24 Nov: 'A on all four', via the Chair); ERR-407; RECORD_RULES s7a as amended 25 Nov (a ruled withdrawal stands over a later judgement, ba5ad4e)",
+   "audit": "Audit, 25 Nov 2026: CHECKED from the box's own sources. The sealed 24 Nov row reads judged 23 Nov, +0.98%, estimate 32.9411; LQDT's published estimate is 36.48 (B-2036); prices give entry 32.69 (23 Nov open) and a 24 Nov close of 33.54, so it was never 'above' and is withdrawn at the 24 Nov close at +2.60%. pot 11.061 -> 11.099 is direction-checked only."
+  },
+  {
+   "field": "judged_on",
+   "sealed": null,
+   "should_be": null,
+   "pot_pct": null,
+   "why": "Completes the signed 24 Nov row (roles/audit/b2068/LQDT_SEALED_2026-11-24_SIGN.md: withdrawn at the 24 Nov close). That row named how, move_pct and estimate_at_find but not judged_on, so the corrected row still read judged_on 2026-11-23, the day of the 'above' it replaced: the same mechanism as the CR1 accessor's 'how' gap (0413008), a field of the ending left behind. pot_pct 11.099, move_pct 2.6, how 'withdrawn: our error' and estimate_at_find 36.48 stand as 0413008 left them; no other field changes.",
+   "readers_saw": "no: judged_on is not shown on a reader surface; the served release shows Liquidity 'Withdrawn, our error · 24 Nov'",
+   "decision": "R-812 (Harry, 24 Nov: 'A on all four', via the Chair); ERR-407",
+   "audit": "Audit, 25 Nov 2026: CHECKED. The sealed 24 Nov row reads judged_on 2026-11-23; under R-812 LQDT is withdrawn at the 24 Nov close (signed row, LQDT_SEALED_2026-11-24_SIGN.md), so judged_on is 2026-11-24. judged_on is the only field that moves."
+  }
+ ],
+ "summary": "pot_pct sealed as 11.061; the record's figure is 11.099; judged_on sealed as None; the record's figure is None",
+ "close": "2026-11-24",
+ "at": "2026-11-25T19:29:03",
+ "rule": "a close's public file is written once; a figure or a price that differs from the record is a correction for the record (RECORD_RULES s10)"
+}
