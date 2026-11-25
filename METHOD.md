@@ -60,8 +60,11 @@ The record files are sealed as written, so a rule adopted later does not change 
   that figure.
 - **Joining when readers could first see it.** A company joins at the first open after it reached readers, which can be later
   than the session after its `found` date: T-Mobile US and TransUnion (recorded 20 October, shown to readers 22 October), Rollins
-  and TJX (sealed before they reached readers), Cognex (held back a night by our own system). The `published` field, which would
-  show this, is empty in every file so far. That is a fault in the files, and the entry day in each file is the authority.
+  and TJX (sealed before they reached readers), Cognex (held back a night by our own system). The `published` field, which shows
+  when a company reached readers, is filled for some companies in the files of 20 October to 6 November and empty after; the entry
+  day in each file is the authority. `CORRECTION_2026-11-06.json` lists four entry prices as traded (Rollins, T-Mobile US,
+  TransUnion, TJX) that differ from the 6 November file, because their entry days were restated to the first open readers could
+  have had.
 - **A ruling takes effect at the first close after it (from 18 November).** Where a ruling ended a company and the code caught up
   later, the ending is dated to the first close after the ruling, by a correction, and the sealed files from the days between
   still show it held. Lennox is the case.
@@ -71,13 +74,18 @@ The record files are sealed as written, so a rule adopted later does not change 
   re-entry is withdrawn as our error.
 - **A withdrawal reversed (18 November).** Valmont was withdrawn on 2 November under a rule we had already dropped. The withdrawal
   was reversed by a dated correction, so Valmont counts from its 2 November entry; the 18 November file is the first to show it.
+- **Our estimate's rounding (from the 24 November file).** Estimates are written to two decimals from the 24 November file
+  (PepsiCo 178.5734 becomes 178.57, Cadence 336.8585 becomes 336.85). No company's removal turns on the difference.
 - **The portfolio figure in the files (from 6 November).** `pot_pct` is in every file from 6 November. Earlier files carry each
-  company's rows, from which it can be rebuilt, and `performance_pct`, the average company's move, which is a different figure.
+  company's rows, from which it can be rebuilt, and `performance_pct`, the average company's move, which is a different figure. The files of 6 to 17
+  November computed it before Valmont's and PepsiCo's restorations (CORRECTIONS.md); `SCORE_DAILY.json` carries the figure as it
+  stands, with each day's holdings.
 
 ## The daily score
 
 `SCORE_DAILY.json` lists the score at every close from the base: the portfolio and SPY as levels (100 at the 20 October close),
-the gap in points and the number of companies held. Each line can be checked against that close's record file.
+the gap in points, and the companies held that day, each with its move and close. The portfolio's move each day is the simple
+average of those moves, so every line can be checked without rebuilding the rules.
 
 ## Corrections
 

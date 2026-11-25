@@ -1,5 +1,5 @@
 {
- "about": "Migna US Quality's public score at every close from its base (METHOD.md): the portfolio and SPY as levels, 100 at the base close, total return; the gap in points; the companies held.",
+ "about": "Migna US Quality's public score at every close from its base (METHOD.md): the portfolio and SPY as levels, 100 at the base close, total return; the gap in points; the companies held; and each close's holdings with their moves (from the previous close, or a newcomer's entry open) and closes, whose simple mean is the portfolio's move that day.",
  "base_close": "2026-10-20",
  "public_start": "2026-10-21",
  "to_close": "2026-11-24",
